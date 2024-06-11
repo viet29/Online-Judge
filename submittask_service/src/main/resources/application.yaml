@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: submittask_service
+    servlet:
+        multipart:
+            enabled: true
+            file-size-threshold: 2KB
+            max-file-size: 200MB
+            max-request-size: 215MB
+server:
+    port: 8084
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+

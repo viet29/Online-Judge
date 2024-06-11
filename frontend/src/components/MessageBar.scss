@@ -1,0 +1,44 @@
+.ms{
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+    }
+    .bar{
+        display: flex;
+        margin: 10px auto;
+        .step{
+            display: flex;
+            flex-direction: column;
+            .step-circle{
+                display: flex;
+                width: 40px;
+                height: 40px;
+                border-radius: 25px;
+                background-color: #fff;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                i{
+                    color: #fff;   
+                    font-size: 22px;    
+                    
+                }
+            }
+            span{
+                margin-top: 10px;
+                width: 100px;
+                font-size: 15px;
+                text-align: center;
+                font-weight: 500;        
+            }
+        }
+        .line{
+            width: 200px;
+            height: 4px;
+            margin: 20px 3px;
+            background-color: rgb(209, 209, 209);
+        }
+    }
+}

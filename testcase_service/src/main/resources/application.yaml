@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: testcase_service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oj
+    username: root
+    password: 291202
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8085
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

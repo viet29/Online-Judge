@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: api_gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:3000"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+              - PATCH
+              - HEAD
+      routes:
+        - id: exercise_service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/exercises/**
+        - id: notification_service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/socket/**
+        - id: submission_service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/submissions/**
+        - id: submittask_service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/submit/**
+        - id: testcase_service
+          uri: http://localhost:8085
+          predicates:
+            - Path=/testcases/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8080

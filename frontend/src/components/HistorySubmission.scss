@@ -1,0 +1,78 @@
+.submission-history{
+    margin: 40px 0 80px;
+    padding: 20px 40px;
+    border: 1.8px solid #9e9e9e3a;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    .list{
+        text-align: center;
+        thead{
+            background-color: #faeded;
+            text-align: center;
+            padding: auto 0;
+            border: 2px solid #faeded;
+            tr{
+                width: 100%;
+                th{
+                    font-weight: 500;
+                    color: #3e3e3edb;
+                    padding: 12.5px;
+                }
+                th:nth-child(1){
+                    width: 7%;
+                }
+                th:nth-child(2){
+                    width: 10%;
+                }
+                th:nth-child(3){
+                    width: 20%;
+                }
+                th:nth-child(4){
+                    width: 18%;
+                }
+                th:nth-child(5){
+                    width: 10%;
+                }
+                th:nth-child(6){
+                    width: 10%;
+                }
+                th:nth-child(7){
+                    width: 10%;
+                }
+                th:nth-child(8){
+                    width: 15%;
+                }
+
+            }
+        }
+
+        tbody{
+            td:nth-child(2){
+                text-align: left;
+            }
+            td:nth-child(4){
+                color: #b20404db;
+                text-align: center;
+                font-weight: 400;
+
+            }
+            td:nth-child(8){
+                text-transform: capitalize;
+            }
+            td:nth-child(5){
+                font-weight: 400;
+                a{
+                    color: green;
+                    text-decoration: none;
+                    :hover{
+                        text-decoration:solid;
+                    }
+                }
+            }
+
+        }
+    }
+}
